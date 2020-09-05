@@ -1,0 +1,57 @@
+Assignment 01
+
+01 LIST and Its default functions
+
+▪︎List Append() Append() add method adds an item to the end of the list.
+
+▪︎List extend() Extend() method add all the elements of an iterable to the end of the list.
+
+▪︎List insert() Insert() method insert an element to the list at the specified index.
+
+▪︎List remove() Remove() method removes the first matching element from the list.
+
+▪︎List count() Count() method returns the number of items the specified element in the list.
+
+02 Dictionary and List functions
+
+▪︎Popitem() Removes a particular item in a dictionary.
+
+▪︎clear() Removes all items from the dictionary.
+
+▪︎items() Return a new object of the dictionary's items in (key, value) format.
+
+▪︎keys() Returns a new object of the dictionary's key.
+
+▪︎values() Returns a new object of the dictionary's values.
+
+03 Sets and its default functions
+
+▪︎add() Adds an element to the set.
+
+▪︎clear() Removes all elements from the set
+
+▪︎copy() Returns a copy of the set.
+
+▪︎difference() Returns the different of two or more sets as a new set.
+
+▪︎union() Returns the union of sets in a new set.
+
+04 Tuples and explore default methods
+
+▪︎count() Returns the number of times a specified values occurs in a tuple.
+
+▪︎index() Searches the tuple for a specified value and returns the position of where it was found.
+
+05 Strings and explore default methods
+
+▪︎capatalize() Converts the first character o upper case.
+ 
+▪︎Casefold() Converts string into lower case. 
+
+▪︎center() Returns a centered string. 
+
+▪︎count() Returns the number of times a specified value occurs in a string.
+ 
+▪︎encode() Returns an encode version of the string.
+
+
