@@ -1,0 +1,49 @@
+Day 03
+
+Question 01
+
+n = input("enter the current Altitude \n")
+n = int(n)
+if n <= 1000:
+  print("safe to land")
+elif n <4500:
+  print("bring down to 1000ft")
+elif n >6500:
+  print("turn around and try later")
+
+output1
+enter the current Altitude
+1000
+safe to land
+output2
+enter the current Altitude
+4000
+bring down to 1000tf
+output3
+enter the current Altitude
+4950
+turn around and try later 
+
+Question 02
+
+Using a for loop and range function please print all the prime numbers between 1 to 200 
+
+def is_prime(n):
+    status = True
+    if n < 2:
+        status = False
+    else:
+        for i in range(2,n):
+            if n % i == 0:
+                status = False
+    return status
+
+for n in range(1,200):
+    if is_prime(n):
+        if n==199:
+            print (n)
+        else:
+            print (n),",",
+
+output 
+2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 173, 179, 181, 191, 193, 197, 199.
