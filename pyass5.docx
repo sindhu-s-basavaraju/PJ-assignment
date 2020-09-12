@@ -1,0 +1,26 @@
+Day 05
+
+Assignment 02
+Make a question for prime number and use filter to filter out all prime number from 1 to 2500.
+
+prime (n):
+if(n==1):
+ return false
+elif(n==2):
+ return true
+else:
+  for x in range(2,n):
+   if(n%x==0):
+    return  false
+    else
+     return true
+lst=list(range(1,2500))
+lst_prime = [ ]
+lst_prime_num=filter(prime,lst)
+
+Assignment  03
+make a lambda function for capitalizing the whole sentence passed ising arguments 
+and map all the sentence in the list wit lambda function.
+
+lst=["hey this is sai","i am in Mumbai ,....."]
+lst_new=map(lambda x: x.title(),list)
