@@ -1,0 +1,40 @@
+Day 08
+
+Assignment 01.
+write  a decorator function.
+fibonacci..
+
+import timeit
+from memoize import memoize  
+def fib(n):
+    if n < 2:
+        return n
+    else:
+        return fib(n-1) + fib(n-2)
+
+t1 = timeit.Timer("fib(35)", "from __main__ import fib")
+print t1.timeit(1)
+
+Assignment  02
+exception handling.
+try:
+    f = open("file.txt", "r")
+    try:
+        string = f.read()
+        line = f.readline()
+        lines = f.readlines()
+    finally:
+        f.close()
+except IOError:
+    pass
+
+
+try:
+    f = open("file.txt", "w")
+    try:
+        f.write('blah') 
+        f.writelines(lines)
+    finally:
+        f.close()
+except IOError:
+    pass
