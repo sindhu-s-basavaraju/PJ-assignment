@@ -1,0 +1,56 @@
+Day 09.
+
+Assignment 01.
+%%writefile prime.py
+def isprime(num):
+    if num in(0, 1):
+        return False
+    for prime in range(2, num-1):
+        if num % prime == 0:
+            return False
+        return True
+
+import prime
+prime.isprime(199)
+True
+
+USING UNIT TEST
+%%writefile newprime.py
+
+import unittest
+import prime
+
+class primenumber(unittest.TestCase):
+    def testprime(self):
+        Number = 32
+        result = prime.isprime(Number)
+        self.assertEquals(result, False)
+
+        
+    def testprimenum(self):
+        Num = 199
+        res = prime.isprime(Num)
+        self.assertEquals(res, True)
+
+        
+        
+if __name__ == "__main__":
+    unittest.main()
+
+Assignment 02
+ARMSTRONG USING GENERATOR
+
+def getArmstrongNumGen(lst):
+    for num in lst:
+        order=len(str(num))
+        temp=num
+        sum=0
+        while temp >0:
+            digit=temp%10
+            sum=sum+digit**order
+            temp=temp//10
+        if sum==num:
+             yield num
+
+print(list(getArmstrongNumGen(lst)))
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 153, 370, 371, 407]
